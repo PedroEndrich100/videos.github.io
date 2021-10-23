@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<link href="CSS/estilos.css" rel="stylesheet" type="text/css">
+	<script src="Script/carrusel.js" type="text/javascript"></script>
+	<title>Galeria</title>
+	
+</head>
+<body>
+	<a href="javascript:history.back();">REGRESAR AL MENU</a>
+
+	<h1 id= "titulo">Galeria de Fotos</h1>
+
+	<div class="carousel">
+	    <button id="retroceder">Retroceder</button>
+	    <div id="imagen"></div>
+	    <button id="avanzar">Avanzar</button>
+	</div>
+	<div class="controles">
+	    <button id="play">Play</button>
+	    <button id="stop" disabled>Stop</button>
+	</div>
+	
+		<h2 id = "titulo2">Información para contactar un Apicultor</h3>
+		
+		<div class="boton">
+			<button id="mostrar">Mostar Información</button>
+
+		</div>
+		<script>
+		let button = document.getElementById("mostrar"); // Encuentra el elemento "p" en el sitio
+	  button.onclick = muestraAlerta; // Agrega función onclick al elemento
+
+	  var nombre = "Pedro Endrich Recinos Francisco";
+	  var numero = "981 142 44 02";
+	  function muestraAlerta(evento) {
+	    alert("DATOS DEL APICULTOR\nNombre: " + nombre + "\nNúmero de teléfono: " + numero);
+  }
+
+</script>
+		
+</body>
+</html>

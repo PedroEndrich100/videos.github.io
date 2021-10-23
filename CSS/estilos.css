@@ -1,0 +1,50 @@
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+#imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+#titulo{
+
+    display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+#titulo2{
+
+    display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.boton{
+    display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+#mostrar{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.controles {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+#stop,#play{
+    height:50px; 
+    width:200px;
+}
