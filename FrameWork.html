@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="Jquery/jquery.js"></script>
+	
+	<!--Script de los dos eventos Eventos clik-->
+	<script>
+		$(document).ready(function (){
+			$('#btnMostrar').click(function(){
+			$('#contenedor').show(2000);
+			});
+			$('#btnOcultar').click(function(){
+			$('#contenedor').hide(2000);
+			});
+		});
+	</script>
+
+	<!--Script para modificar el css, Focus en los inpput-->
+	<script>
+		$(document).ready(function(){
+			$('input').focus(function(){
+				$(this).css('outline-color','red');
+			});
+		});
+
+	</script>
+
+	<!--Script para modificar el DOM, Caambia el texto de <p>-->
+	<script>
+		$(function(){
+			init();
+		});
+
+		function init(){
+			var x = $('.btn');
+			x.click(write);
+		}
+
+		function write(){
+			var contenido = document.getElementById("usuario").value;
+			var x= $('p');
+			x.text(contenido+' se bueno y cuida a las abejas :)');
+		}
+
+	</script>
+	<link href="CSS/estilos.css" rel="stylesheet" type="text/css">
+	<title>FrameWork Java Scrip</title>
+</head>
+<body>
+	<a href="javascript:history.back();">REGRESAR AL MENU</a>
+	<h1>Recursos Fotograficos</h1>
+	<div id ="contenedor">
+		<img src="Recursos/IMG/abeja.jpg" alt="imagen uno" id="img1">
+
+	</div>
+	<div id="contenedor2">
+	<button type="submit" id="btnMostrar"> Mostrar</button>
+	<button type="submit" id="btnOcultar"> Ocultar</button>
+	</div>
+	<br>
+	<br>
+	<h2>Pobemos algo :)</h2>
+	<div id="contenedor3">
+	<label>Escribe tu nombre: </label> <input id="usuario" type="text" name="name">
+	<div id="contenedor3">
+<br>
+
+	<button id="btnNombre" class="btn">Revelar Mensaje</button>
+	<p>---mensaje para enseñar---</p>
+	
+</body>
+</html>

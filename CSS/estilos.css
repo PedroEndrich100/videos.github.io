@@ -11,7 +11,7 @@
     background-size: cover;
 }
 
-#titulo{
+#titulo,h1, #contenedor{
 
     display: flex;
   justify-content: center;
@@ -23,13 +23,25 @@
   justify-content: center;
   font-family: sans-serif;
 }
-
+h2{
+     font-family: sans-serif;
+}
+p{
+font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+label,input{
+    font-size: 18px;
+    font-family: sans-serif;
+}
 .boton{
     display: flex;
   justify-content: center;
   font-family: sans-serif;
 }
-#mostrar{
+#mostrar,#ocultar{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -39,6 +51,23 @@
     display: inline-block;
     font-size: 16px;
 }
+
+#btnMostrar,#btnOcultar,#btnNombre{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#contenedor2{
+     display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
 .controles {
   display: flex;
   justify-content: center;
